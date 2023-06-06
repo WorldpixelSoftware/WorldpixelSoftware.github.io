@@ -1,0 +1,58 @@
+.bg-video {
+    position: fixed;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.masthead {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .masthead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+  }
+  .masthead .masthead-content {
+    position: relative;
+    max-width: 80rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+  .masthead .masthead-content h1, .masthead .masthead-content .h1 {
+    font-size: 2.5rem;
+  }
+  .masthead .masthead-content p {
+    font-size: 1.2rem;
+  }
+  .masthead .masthead-content p strong {
+    font-weight: 700;
+  }
+
+  @media (min-width: 580px) {
+    .masthead{
+      height: auto;
+    }
+  }
+
+.badges img{
+  padding-inline: 5px;
+  padding-block: 5px;
+  height: 50px;
+}
+

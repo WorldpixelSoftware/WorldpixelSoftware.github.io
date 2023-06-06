@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Worldpixel Software Homepage" />
+        <meta name="author" content="Worldpixel Software" />
+        <title>Woldpixel Software</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/icons/wp_icon.ico" />
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet"/>
+        <link href="../css/wps-general.css" rel="stylesheet"/>
+        <link href="../css/navbar.css" rel="stylesheet"/>
+        <link href="../css/coming-soon.css" rel="stylesheet"/>
+    </head>
+    <body class="d-flex flex-column h-100">
+
+        <!-- Navigation DE-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="../index.html">Worldpixel Software</a>
+                <div class="d-flex flex-row">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown navbar-language-collapsed ms-2">
+                        <button class="btn dropdown-toggle" type="button" id="navbarDropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="flag" src="../assets/svg/de.svg"/>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                            <a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Change to English" onclick="changeLanguageTo('en')">
+                                <img class="flag" src="../assets/svg/gb.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownProducts" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Produkte</a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownProducts">
+                                <li><a class="dropdown-item" href="simple-log/home.html">Simple Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="software-support.html">Software Support</a></li>
+                        <li class="nav-item dropdown navbar-language-expanded">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownLanguage" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="flag" src="../assets/svg/de.svg"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownLanguage">
+                                <a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Change to English" onclick="changeLanguageTo('en')">
+                                    <img class="flag" src="../assets/svg/gb.svg"/>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-fill">
+
+            <video 
+                class="bg-video" playsinline="playsinline" autoplay="autoplay" 
+                muted="muted" loop="loop">
+                <source src="../assets/video/coming_soon.mp4" type="video/mp4" />
+            </video>
+
+            <div class="masthead flex-fill">
+                <div class="masthead-content text-white">
+                    <div class="container px-4 px-lg-0">
+                        <h1 class="fst-italic lh-1 mb-4">Unsere Website kommt bald</h1>
+                        <p class="mb-3">Wir entwickeln im Moment unsere Produkte.<br>Informationen finden Sie bald hier!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+                    <a class="btn btn-dark m-3" href="mailto:contact@worldpixel.de" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="E-mail Kontakt">
+                        <i class="bi bi-envelope-at fontsize-icons"></i>
+                    </a>
+                    <a class="btn btn-dark m-3" href="https://www.linkedin.com/in/konstantin-ludwig" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Linked-In Kontakt">
+                        <i class="bi bi-linkedin fontsize-icons"></i>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer DE-->
+        <footer class="bg-dark py-4 mt-auto footer z-on-top sticky-bottom">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div id="copyright" class="small m-0 text-wps-white">
+                            Copyright &copy; Worldpixel Software 2023
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="imprint.html">Impressum</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script type="text/javascript" src="../js/scripts.js"></script>
+    </body>
+</html>
