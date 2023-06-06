@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Simple Log use of OAuth2" />
+        <meta name="author" content="Worldpixel Software" />
+        <title>Simple Log - Use of OAuth2</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../../assets/icons/sl_icon.ico" />
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../../css/styles.css" rel="stylesheet"/>
+        <link href="../../css/wps-general.css" rel="stylesheet"/>
+        <link href="../../css/navbar.css" rel="stylesheet"/>
+    </head>
+    <body class="d-flex flex-column h-100">
+
+        <!-- Navigation SL EN-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="home.html">
+                    <img class="mx-2" src="../../assets/icons/sl_icon.ico" style="height: 40px;"/>
+                    Simple Log
+                </a>
+                <div class="d-flex flex-row">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown navbar-language-collapsed ms-2">
+                        <button class="btn dropdown-toggle" type="button" id="navbarDropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="flag" src="../../assets/svg/gb.svg"/>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                            <a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Zu Deutsch wechseln" onclick="changeLanguageTo('de')">
+                                <img class="flag" src="../../assets/svg/de.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../home.html">Worldpixel Software</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownProducts" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Legal</a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark legal" aria-labelledby="navbarDropdownLegal">
+                                <li class="nav-item"><a class="nav-link active" href="oauth2.html">OAuth2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class="nav-item"><a class="nav-link" href="terms-of-usage.html">Terms of Usage</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown navbar-language-expanded">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownLanguage" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="flag" src="../../assets/svg/gb.svg"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownLanguage">
+                                <a class="dropdown-item" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Zu Deutsch wechseln" onclick="changeLanguageTo('de')">
+                                    <img class="flag" src="../../assets/svg/de.svg"/>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="bg-dark px-4 py-3 text-center">
+                <div class="py-3">
+                    <h1 class="display-6 fw-bold text-wps-white">Use of OAuth2</h1>
+                </div>
+            </div>
+            <div id="textwrapper" class="container">
+                <h4 class="mx-5 mt-5">What is Simple Log</h4>
+                
+                <div class="mx-5">
+                    <p class="mt-3 mb-4">
+                        Simple Log is a pilot logbook application for Windows, Android, iOS and macOS complient to EASA rules and regulations according FCL.050. 
+                        <br><br>We have a simple mission in delivering an affordable, multi platform solution for logging your flights. 
+                        Be it as a private pilot, professional pilot or flight simmer. 
+                        <br>What's most important to us is:
+                        <ul>
+                            <li>No recurring fees or advertisement</li>
+                            <li>Easy multi-platform integration</li>
+                            <li>High standards of data protection</li>
+                            <li>Ease of use</li>
+                            <li>A pilot log from pilots for pilots</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <h4 class="mx-5">Use of Google OAuth2</h4>
+                <p class="mt-3 mb-4 mx-5">
+                    <u>What this app does with user data and connection to the app:</u> Simple Log gives the user the ability to use Google Drive 
+                    to backup logbook data. Using the users Google Drive requires him to signin via the Google OAuth2 authentication service. 
+                    When using this service, Simple Log receives the users email to redisplay it to him as well as a token to connect to the users 
+                    Google Drive appdata directory. All processes happening here are handled internally, meaning they are stored on the users device and not sent to 
+                    Worldpixel Software or any third party. An Exception to this is data Google might collect as stated in their EULA or Terms of Service.
+                    <br><br>
+                    <u>How does this app enhance user functionality?</u> This app uses Google Drive API and services to backup data collected by the user to his personal 
+                    Google Drive in order to retrieve if lost or synchronize across multiple devices.
+                    <br><br>
+                    <u>Link to Privacy Policy:</u> <a href="privacy-policy.html">Click here.</a>
+                </p>
+                <h4 class="mx-5">Google OAuth2 Limited Use Disclosure</h4>
+                <div class="mt-3 mb-5 mx-5">
+                    <p>
+                        Simple Log doesn't request restricted scopes, but if it did, Simple Logs use of information received from Google APIs 
+                        will adhere to the 
+                        <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">
+                            Google API Services User Data Policy</a>, including the Limited Use requirements. 
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer SL EN-->
+        <footer class="bg-dark py-4 mt-auto footer z-on-top sticky-bottom">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div id="copyright" class="small m-0 text-wps-white">
+                            Copyright &copy; Worldpixel Software 2023
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="../imprint.html">Imprint</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script type="text/javascript" src="../../js/scripts.js"></script>
+    </body>
+</html>
