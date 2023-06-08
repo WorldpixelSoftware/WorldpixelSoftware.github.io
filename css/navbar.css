@@ -66,6 +66,25 @@
     }
 }
 
+@media all and (max-width: 480px){
+    .navbar{
+        --bs-navbar-brand-font-size: 1.0rem;
+    }
+
+    .navbar-toggler-icon{
+        width: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 4px 4px;
+      }
+
+    .flag{
+        width: 1.0rem;
+        height: 1.0rem;
+    }
+}
+
 .flag{
     cursor: pointer;
 }
