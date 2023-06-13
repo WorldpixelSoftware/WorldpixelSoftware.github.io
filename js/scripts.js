@@ -22,7 +22,7 @@ function changeLanguageTo(language){
     }
 
     /*Todo change to https when website is live*/
-    var newLink = `https://${siteLinkComponents[languageIndex - 2]}/${siteLinkComponents[languageIndex-1]}/${language}`;
+    var newLink = `http://${siteLinkComponents[languageIndex - 2]}/${siteLinkComponents[languageIndex-1]}/${language}`;
 
     for(let i = languageIndex + 1; i < siteLinkComponents.length; i++){
         newLink += `/${siteLinkComponents[i]}`;

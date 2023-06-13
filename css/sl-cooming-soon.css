@@ -30,18 +30,24 @@
   .masthead .masthead-content {
     position: relative;
     max-width: 80rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-    font-size: 2.5rem;
+    font-size: 24px;
   }
   .masthead .masthead-content p {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
   .masthead .masthead-content p strong {
     font-weight: 700;
+  }
+
+  .badges img{
+    padding-inline: 5px;
+    padding-block: 5px;
+    height: 40px;
   }
 
   @media (min-width: 580px) {
@@ -50,9 +56,25 @@
     }
   }
 
-.badges img{
-  padding-inline: 5px;
-  padding-block: 5px;
-  height: 50px;
-}
+  @media all and (min-width: 580px){
+
+    .masthead .masthead-content {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .masthead .masthead-content h1, .masthead .masthead-content .h1 {
+      font-size: 2.5rem
+    }
+    .masthead .masthead-content p {
+      font-size: 1.2rem;
+    }
+    .masthead .masthead-content p strong {
+      font-weight: 700;
+    }
+
+    .badges img{
+      height: 50px;
+    }
+  }
 
