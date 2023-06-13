@@ -27,12 +27,6 @@
 
 .navbar{
     --bs-navbar-brand-font-size: var(--wps-navbar-brand-fontsize);
-    --bs-nav-link-font-size: 18px;
-    --bs-dropdown-font-size: 18px;
-}
-
-.dropdown-item{
-    font-size: 18px;
 }
 
 .navbar-dark{
@@ -40,11 +34,6 @@
     --bs-navbar-hover-color: var(--wps-navbar-hover);
     --bs-navbar-active-color: var(--wps-navbar-active);
     --bs-navbar-brand-color: var(--wps-white);
-}
-
-.navbar-brand img{
-    padding-bottom: 2px;
-    height: 40px;
 }
 
 @media all and (min-width: 992px) {
@@ -79,12 +68,7 @@
 
 @media all and (max-width: 480px){
     .navbar{
-        --bs-navbar-brand-font-size: 16px;
-        --bs-nav-link-font-size: 14px;
-    }
-
-    .dropdown-item{
-        font-size: 14px;
+        --bs-navbar-brand-font-size: 1.0rem;
     }
 
     .navbar-toggler-icon{
@@ -93,7 +77,7 @@
 
     .navbar-toggler {
         padding: 4px 4px;
-    }
+      }
 
     .flag{
         width: 1.0rem;

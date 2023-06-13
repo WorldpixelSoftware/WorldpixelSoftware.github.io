@@ -9,19 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme JS-->
-        <script>
-            window.onload = onPageLoaded;
-
-            function onPageLoaded(){
-                var language = window.navigator.userLanguage || window.navigator.language;
-                if(language.startsWith('de')){
-                    window.location.href = "de/home.html";
-                    return;
-                }
-
-                window.location.href = "en/home.html";
-            }
-        </script>
+        <script type="text/javascript" src="js/index-script.js"></script>
     </head>
     <body>
     </body>
